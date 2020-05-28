@@ -4,7 +4,6 @@ class CreateInvoice < ActiveRecord::Migration[5.2]
       t.date :date_created
       t.boolean :status
       t.float :total
-      #add_reference :invoices, :customer, foreign_key: true
     end
   end
 end
