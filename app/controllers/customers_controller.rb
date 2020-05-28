@@ -1,7 +1,6 @@
 class CustomersController < ApplicationController
     
     def index
-        byebug
         @customers = Customer.all
         render json: @customers, include: {invoices: {include: :payments}} 
     end
