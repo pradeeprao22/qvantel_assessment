@@ -11,6 +11,6 @@ class PaymentsController < ApplicationController
     private
   
     def payment_params
-       params.require(:payment).permit(:date_payed, :status, :amount_payed, :customer_id, :invoice_id)
+       params.permit(:date_payed, :status, :amount_payed, :customer_id, :invoice_id)
     end
 end
